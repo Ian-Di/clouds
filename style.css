@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;  
+}
+
+.header-back{
+    background-image: url(./assets/cabeçalho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+
+    font-size: 3vh;
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 0px 100px;
+    
+    color: white;
+}
+
+.text-header{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 40px;
+    font-size: 2.5vh;
+}
+
+.text-header h1{
+    font-size: 7vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.header img{
+    width: 80vh;
+}
+
+
+.area-text1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    align-items: center;
+    padding: 60px 140px;
+    gap: 30px;
+}
+
+.text-1 h1{
+    font-size: 9vh;
+    text-align: right;
+    font-weight: 800;
+}
+
+.text-2{
+    font-size: 3.5vh;
+}
+
+.cards-area1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: 90px 100px;
+    gap: 60px;
+
+    background-color: #253F5C;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+    width: 270px;
+
+    color: white;
+
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.346);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card1 h3{
+    font-weight: 800;
+    font-size: 3.5vh;
+}
+
+.card1 img{
+    width: 20vh;
+}
+
+.cards-area2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: 60px 200px;
+    gap: 20px;
+
+    background-color: #253F5C;
+}
+
+.card2{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
+
+    font-size: 2.5vh;
+    color: white;
+
+   
+    border-radius: 1px;
+    border: 2px solid #7087A9;
+}
+
+.card2 h3{
+    font-size: 3vh;
+    font-weight: 800;
+}
+
+.card2 img{
+    width: 10vh;
+}
+
+.area-text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    font-size: 4vh;
+    text-align: center;
+
+    background-color: #253F5C;
+    color: white;
+}
+
+.area-text2 h2{
+    font-size: 9vh;
+    font-weight: 800;
+}
+
+.sobre-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 0px 50px;
+
+    font-size: 2vh;
+}
+
+.text-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 20px;
+}
+
+.text-sobre h1{
+    font-size: 7vh;
+    font-weight: 800;
+}
+
+.text-sobre h2{
+    font-size: 5vh;
+    font-weight: 600;
+}
+
+
+.img-sobre{
+    padding: 30px 20px;
+}
+
+.img-sobre img{
+    width: 80vh;
+    align-items: center;
+
+    background-color: #7087A9;
+    border-radius: 52% 48% 53% 47% / 43% 34% 66% 57% ;
+}
+
+.area-text3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 20px;
+
+    font-size: 3vh;
+    color: white;
+
+    background-color: #253F5C;
+}
+
+.area-text3 h1{
+    font-weight: 800;
+    font-size: 8vh;
+}
+
+.footer-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px 400px;
+
+    background-color: #253F5C;
+    color: white;
+}
+
+.cards-footer{
+    display: flex;
+    gap: 20px;
+}
+
+.card-cnt{
+    background-color: #080705;
+}
+
+.cards-footer img{
+    width: 8vh;
+    padding: 5px;
+}
+
+.footer-2{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    background-color: #253F5C;
+
+    font-size: 1.5vh;
+    color: white;
+}
+
+.botton a{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #36DFFE;
+
+    font-weight: 700;
+    font-size: 2.4vh;
+    color: white;
+    text-decoration: none;
+}
+
+.botton img{
+    width: 2vh;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #080705;
+    width: 6px;
+    height: 6px;
+    border-radius: 9.9px;
+}
