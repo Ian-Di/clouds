@@ -4,6 +4,10 @@
     font-family: "Raleway", sans-serif;  
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header-back{
     background-image: url(./assets/cabeçalho.png);
     background-repeat: no-repeat;
@@ -23,7 +27,18 @@
 
 .nav-links{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover{
+    background-color: #36DFFE;
+    border-radius: 30px;
 }
 
 .header{
@@ -146,7 +161,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 70px 50px;
+    gap: 20px;
 
     font-size: 4vh;
     text-align: center;
@@ -268,9 +284,209 @@
     width: 2vh;
 }
 
-::-webkit-scrollbar{
-    width: 6px;
-    height: 6px;
+@media screen and (width < 560px){
+    .header-back{
+        background-image: url(./assets/cabeçalho.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content:left;
+        padding: 30px 20px;
+    
+        font-size: 2vh;
+    }
+    
+    .nav-links{
+        display: none;
+        gap: 20px;
+    }
+    
+    .nav-links a{
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    
+    .header{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    
+    .text-header{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        font-size: 2.5vh;
+    }
+    
+    .text-header h1{
+        font-size: 5.5vh;
+    }
+    
+    .header img{
+        width: 60vh;     
+    }
+    
+    .area-text1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        align-items: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    
+    .text-1 h1{
+        font-size: 8vh;
+        text-align: left;
+        font-weight: 800;
+    }
+    
+    .text-2{
+        font-size: 3vh;
+        text-align:justify;
+    }
+    
+    .cards-area1{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        padding: 90px 20px;
+        gap: 30px;
+    }
+    
+    .card1{
+        width: 220px;
+    }
+    
+    .card1 h3{
+        font-size: 3vh;
+    }
+    
+    
+    .cards-area2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        padding: 30px 20px;
+        gap: 20px;
+    
+        background-color: #253F5C;
+    }
+    
+    .card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 20px;
+    
+        font-size: 2.5vh;
+    }
+    
+    .card2 h3{
+        font-size: 3vh;
+    }
+    
+    .card2 img{
+        width: 10vh;
+    }
+    
+    .area-text2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 20px;
+        gap: 30px;
+    
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    .area-text2 h2{
+        font-size: 8vh;
+        font-weight: 800;
+    }
+    
+    .sobre-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        padding: 60px 20px;
+    
+        font-size: 2.5vh;
+    }
+    
+    .text-sobre{   
+        width: 320px;
+    }
+    
+    .text-sobre h1{
+        font-size: 5.5vh;
+    }
+    
+    .text-sobre h2{
+        font-size: 4vh;
+    }
+    
+    .img-sobre{
+        padding: 0px;
+    }
+    
+    .img-sobre img{
+        width: 50vh;
+    }
+    
+    .area-text3{
+        padding: 60px 20px;
+        gap: 30px;
+    
+        font-size: 3vh;
+    }
+    
+    .area-text3 h1{
+        font-size: 8vh;
+    }
+    
+    .footer-1{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+    
+    .cards-footer{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .cards-footer img{
+        width: 5vh;
+        padding: 5px;
+    }
+      
+    .botton a{
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #36DFFE;
+    
+        font-weight: 700;
+        font-size: 2.4vh;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .botton img{
+        width: 2vh;
+    }
 }
 
 ::-webkit-scrollbar-thumb{
