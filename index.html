@@ -21,6 +21,15 @@
                 <h5><a href="#vantagens">VANTAGENS</a></h5>
                 <h5><a href="#sobre">SOBRE</a></h5>
             </div>
+            <div class="burguer">
+                <img src="./assets/icons8-cardápio.svg" onclick="clickMenu()">
+                <div id="listmob">
+                    <a href="#home">HOME</a>
+                    <a href="#serviços">SERVIÇOS</a>
+                    <a href="#vantagens">VANTAGENS</a>
+                    <a href="#sobre">SOBRE</a>
+                </div>
+            </div>
         </div>
         <div class="header">
             <div class="text-header">
@@ -107,7 +116,7 @@
     <div class="area-text2">
         <div class="text-11">
             <h2>Ficou com aluguma duvida?</h2>
-            <p>Entre em contato para saber mais indormações de orçamentos</p>
+            <p>Entre em contato para saber mais informações de orçamentos</p>
         </div>
         <div class="botton">
             <h4>
@@ -145,7 +154,7 @@
     </div>
     <div class="area-text3">
         <div>
-            <h1>Gostou do que olhou a cima?</h1>
+            <h1>Gostou do que olhou acima?</h1>
             <p>Entre em contato clicando no botão do WhatsApp para fazermos os orçamento</p>
         </div>
         <div class="botton">
@@ -173,5 +182,14 @@
     <div class="footer-2">
         <h2>CLOUDPAGES | Política de Privacidade</h2>
     </div>
+    <script>
+        function clickMenu() {
+           if (listmob.style.display == 'flex'){
+            listmob.style.display = 'none'
+           } else{
+            listmob.style.display = 'flex'
+           }
+        }
+    </script>
 </body>
 </html>

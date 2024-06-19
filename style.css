@@ -41,6 +41,12 @@ html{
     border-radius: 30px;
 }
 
+.burguer{
+    display: none;
+}
+
+
+
 .header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -296,8 +302,8 @@ html{
     .nav-bar{
         display: flex;
         align-items: center;
-        justify-content:left;
-        padding: 30px 20px;
+        justify-content:  space-around;
+        padding: 30px 0px;
     
         font-size: 2vh;
     }
@@ -306,12 +312,48 @@ html{
         display: none;
         gap: 20px;
     }
-    
-    .nav-links a{
-        text-decoration: none;
-        padding: 5px 10px;
+
+    .burguer{
+        display: block;
+        flex-direction: column;
+    }
+
+    .burguer img{
+        display: flex;
+        width: 4vh;
+    }
+
+    #listmob{
+        position: absolute;
+        top: 80px;
+        right: 1px;
+        height: 250px;
+        width: 360px;
+
+
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        
+
+        background-color: #253F5C;
+        animation: slide1 8ms ease;
     }
     
+    #listmob a{
+        padding: 5px 10px;
+        font-size: 3vh;
+        color: #FFF; 
+        text-decoration: none;  
+    }
+
+    #listmob a:hover{
+        background-color: #36DFFE;
+        border-radius: 20px;
+    }
+
     .header{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -319,7 +361,7 @@ html{
         align-items: center;
         padding: 0px 0px;
         gap: 0;
-        height: 620px;
+        height: 660px;
     }
     
     .text-header{
@@ -335,7 +377,7 @@ html{
     }
     
     .img-header img{
-        width: 40vh;    
+        width: 35vh;     
     }
     
     .area-text1{
@@ -428,7 +470,7 @@ html{
     }
     
     .text-sobre{   
-        width: 320px;
+        width: 345px;
     }
     
     .text-sobre h1{
@@ -490,6 +532,16 @@ html{
     .botton img{
         width: 2vh;
     }
+}
+
+@keyframes slide1 {
+    0%, 100% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+
 }
 
 ::-webkit-scrollbar-thumb{
