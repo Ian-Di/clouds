@@ -246,35 +246,12 @@ strong{
 }
 
 .footer-1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     padding: 0px 400px;
 
     background-color: #253F5C;
     color: white;
-}
-
-.cards-footer{
-    display: flex;
-    gap: 20px;
-}
-
-.card-cnt{
-    display: flex;
-    background-color: #080705;
-    transition: all 0.2s ease-in-out;
-}
-
-.card-cnt:hover{
-    background-color: aqua;
-    border-radius: 50%;
-}
-
-.cards-footer img{
-    width: 8vh;
-    padding: 5px;
 }
 
 .footer-2{
@@ -399,7 +376,7 @@ strong{
     }
     
     .img-header img{
-        width: 51vh;     
+        width: 46vh;     
     }
     
     .area-text1{
