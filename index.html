@@ -95,7 +95,7 @@
             <img src="./assets/icons8-feed-de-atividade-64.png" alt="">
             <div>
                 <h3>MARKETING DE CONTEÚDO</h3>
-                <p>Criamos conteúdo de alta qualidade que atrai e engaja seu público-alvo.                </p>
+                <p>Criamos conteúdo de alta qualidade que atrai e engaja seu público-alvo.          </p>
             </div>
         </div>
         <div class="card2">
@@ -175,6 +175,22 @@
             listmob.style.display = 'flex'
            }
         }
+
+
+        const my0bserver = new IntersectionObserver( (entries) => {
+            entries.forEach( (entry) => {
+                if(entry.isIntersecting ){
+                    entry.target.classList.add('show')
+                } else {
+                    entry.target.classList.remove('show')
+                }
+            })
+        })
+
+        const elements = document.querySelectorAll('.card1')
+
+
+        elements.forEach((element) => my0bserver.observe(element))
     </script>
 </body>
 </html>

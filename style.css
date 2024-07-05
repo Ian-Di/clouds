@@ -59,6 +59,7 @@ strong{
     gap: 80px;
     
     color: white;
+    animation: slide1 1s ease-in-out;
 }
 
 .text-header{
@@ -124,6 +125,15 @@ strong{
     background-color: rgba(255, 255, 255, 0.346);
     backdrop-filter: blur(10px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    
+    transition: all 2s;
 }
 
 .card1 h3{
@@ -540,13 +550,14 @@ strong{
 
 @keyframes slide1 {
     0%, 100% {
-        transform: translateY(-10%);
+        transform: translatex(-10%);
     }
     100% {
-        transform: translateY(0%);
+        transform: translatex(0%);
     }
 
 }
+
  
 ::-webkit-scrollbar{
     width: 6px;
