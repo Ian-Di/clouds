@@ -301,8 +301,8 @@ strong{
     background-color: #080705;
 }
 
-.logo img{
-    height: 8vh;
+.footer-1 .logo img{
+    height: 12vh;
 }
 
 @media screen and (width < 560px){
