@@ -22,6 +22,10 @@ strong{
     justify-content: space-around;
 }
 
+.nav-bar img{
+    height: 8vh;
+}
+
 .nav-bar .nav-list{
     display: flex;
     gap: 5vh;
@@ -330,11 +334,7 @@ strong{
     .nav-bar .button{
         display: none;
     }
-
-    .nav-bar img{
-        height: 8vh;
-    }
-
+    
     .burguer{
         display: block;
         flex-direction: column;
